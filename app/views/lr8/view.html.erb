@@ -1,0 +1,29 @@
+
+<main class="container">
+    <div class="row padd">
+        <div class="col-3 pos">
+            <div> <strong> Результаты вычисления: </strong> </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-3 center">
+            <table width="100%">
+                <tr>
+                    <td> № </td>
+                    <td class="color"> Число </td>
+                </tr>
+            <% @array.each do |elem| %>
+                <tr>
+                    <td class="color"> <%= @array.index(elem) + 1 %></td>
+                    <td> <%= elem %></td>
+                </tr>
+            <% end %>
+            </table>   
+        </div>
+    </div>
+    <div class ="row">
+        <div class="col-3 center">
+            <p> <%= link_to "Повторите вычисления", :lr8_input %> </p>
+        </div>
+    </div>
+</main>     

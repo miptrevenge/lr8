@@ -1,0 +1,33 @@
+
+<main class="container">
+    <div class="row padd">
+        <div class="col-6">
+            <div> <strong> Текст задания: </strong> </div>
+        </div>
+    </div>
+    <div class="row padd">
+        <div class="col-6">
+            <div>        Простое число называется числом Мерсена, если оно может быть пред
+                    ставлено в виде 2 <sup><em>p</em></sup> − 1, где <em>p</em> – тоже простое число. Написать программу,
+                    определяющую количество чисел Мерсена ≤ некоторого <em>n</em> (<em>n</em>  вводится с клавиатуры).
+                    Вывести на печать числа Мерсена и их количество в указанном диапазоне.
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-6">
+                <div class="row padd">
+                    <%= form_tag("/lr8/view", :method => "get") do %>
+                        <div class="row"> 
+                            <div class="col-6"> 
+                                <%= text_field_tag(:v1) %>
+                            </div>
+                            <div class="col-6"> 
+                                <%= submit_tag("Посчитать") %>
+                            </div>
+                        </div> 
+                    <% end %>
+                </div>
+        </div>
+    </div>
+</main>     
